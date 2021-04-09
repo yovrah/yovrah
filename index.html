@@ -175,9 +175,10 @@
 
             </div>
             <br>
-            <div id="pp" style="cursor: pointer; letter-spacing: 2px; font-size: 14px;" onclick="pVid();"><i class="fas fa-play"></i></div>
+            <div id="pp" style="cursor: pointer; letter-spacing: 2px; font-size: 14px;" onclick="pVid();"><i class="fas fa-play" onclick="this.className = (this.className == 'fas fa-pause' ? 'fas fa-play' : 'fas fa-pause')"></i></div>
         </center>
     </div>
+
     <script type="text/javascript">
         var audio = document.getElementById("audio");
 
@@ -186,6 +187,7 @@
         }
 
     </script>
+    
 
     <style>
         html,

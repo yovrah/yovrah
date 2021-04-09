@@ -1,5 +1,5 @@
 var i = 0;
-var titleText = ['y','yo','yov','yovr','yovra','yovrah','yovra','yovr','yov','yo','y',''];
+var titleText = ['y','yo','yov','yovr','yovra','yovrah','yovra','yovr','yov','yo',];
 
 if (document.addEventListener) {
 	document.addEventListener("DOMContentLoaded", function() {
@@ -12,7 +12,7 @@ if (document.addEventListener) {
 }
 
 function loaded() {
-	setInterval(loop, 500);
+	setInterval(loop, 300);
 }
 
 function loop() {

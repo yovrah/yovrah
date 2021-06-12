@@ -3,7 +3,7 @@ class _app {
     videoElement = null;
     audioElement = null;
     musicVolume = 0.10;
-    musicFadeIn = 10000;
+    musicFadeIn = 2000;
     skippedIntro = false;
     backgroundToggler = false;
     shouldIgnoreVideo = false;

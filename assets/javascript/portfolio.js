@@ -1,32 +1,3 @@
-/*
-
-Credits:
-    - Lummit - https://obnoxious.club/ | https://github.com/Lumm1t/ | Discord: Lummit#0201
-    - expl0it, shellcode.team
-    - Steam (emoticon: https://steamcommunity-a.akamaihd.net/economy/emoticon/mgh_17)
-    - Trollface image (http://www.rw-designer.com/icon-image/7835-256x256x32.png)
-    - Tumblr images/icons:
-        a) https://68.media.tumblr.com/730ba51e7f6b0203e023deeb0db8367b/tumblr_osgbbiLXWV1suieauo1_500.jpg
-        b) https://68.media.tumblr.com/8436227895295acecdea170b612fb766/tumblr_nxgg5bYqm81rclv0wo1_500.jpg
-        c) http://images.neon-sign.org/l-m/rose-flower-love-neon-sign.jpg
-        d) https://media.istockphoto.com/vectors/rose-neon-sign-vector-id1088857104?k=6&m=1088857104&s=612x612&w=0&h=ZJCYow5i8noF6nTGHEd6b2bbe9X6rVx4cLDoceexAec=
-        e) https://image.freepik.com/free-vector/polygonal-geometric-rose-neon-sign_1262-19626.jpg
-        f) https://68.media.tumblr.com/49394d5aa66d4c7ea4ffebda38c6be7e/tumblr_orv2rd9eVC1rgewhto1_400.gif
-        g) https://ih1.redbubble.net/image.268210271.5200/sticker,375x360-bg,ffffff.u2.png
-        h) http://picture-cdn.wheretoget.it/ot63b4-l-610x610-shirt-rose-tumblr-grunge-grunge+t+shirt-clothes-t+shirt-tumblr+shirt-dead+roses-black+bear-soft+grunge-soft-soft+ghetto-ghetto-chill-cute-white-red-red+roses-white+tee-pale-sad-dar.jpg
-
-Thanks for:
-    - Google
-    - StackOverflow
-    - jQuery
-    - jQuery Marquee
-    - animate.css
-    - typed.js
-
-GitHub: https://github.com/Lumm1t/obnoxious.club
-
-*/
-
 'use strict';
 
 const ipgeolocation = 'https://api.ipgeolocation.io/ipgeo?apiKey=1785ed53312f42c7b5ef89f65c3faa1a';
@@ -56,10 +27,10 @@ $(document).ready(() => {
     if (mobileAndTabletCheck()) {
         $('#background').replaceWith('<div id="background" style="background-image: url(assets/images/mobile-background.jpg);"></div>');
 
-        app.shouldIgnoreVideo = true;
+        app.shouldIgnoreVideo = false;
     }
 
-    app.titleChanger(['y', 'yo', 'yov', 'yovr', 'yovra', 'yovrah', 'yovrah.github.io', 'Mxmtoon - Falling For U (Extended Mix)']);
+    app.titleChanger(['yovrah.github.io','y', 'yo', 'yov', 'yovr', 'yovra', 'yovrah', 'Mxmtoon - Falling For U (Extended Mix)']);
     app.iconChanger(['assets/icons/red-roses-axz.png']);
 });
 
@@ -92,8 +63,8 @@ $('html').on('contextmenu', (event) => {
     const trollfaceLight = app.skippedIntro ? '' : 'trollface-light';
 
     img.src = 'assets/others/trollface.jpg';
-    img.width = 30;
-    img.height = 40;
+    img.width = 40;
+    img.height = 50;
     img.alt = 'yovrah';
     img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
     img.className = `troll ${trollfaceLight}`;
@@ -103,7 +74,7 @@ $('html').on('contextmenu', (event) => {
 
 setInterval(() => {
     $('.troll').remove();
-}, 100000000);
+}, 1000000000);
 
 $('.skip').click(() => {
     skipIntro();
@@ -138,6 +109,7 @@ const writeLine = (text, speed, timeout, callback) => {
 $.getJSON(ipgeolocation, (data) => {
     writeLine(["<a style='color: #f5ff00'>use auxiliary/scanner/ssh/ssh_login</a>", '<i style="color: #0f0">Authentication...</i>', "Предоставление доступа к <i><span style='font-size: 14px; color: #ff0000;'>[unknown]</span></i>...", ], 30, 500, () => {
         if (app.skippedIntro) return;
+        clearCursor();
 
         const usernames = ['user', 'dude'];
 
@@ -197,7 +169,7 @@ const skipIntro = () => {
         setTimeout(() => {
             const typed = new Typed('#brand', {
                 strings: app.brandDescription,
-                typeSpeed: 40,
+                typeSpeed:50,
 
                 onComplete: () => {
                     clearCursor();
@@ -227,7 +199,7 @@ const skipIntro = () => {
 
             $('.container').fadeIn();
 
-            $('.background').fadeIn(200, () => {
+            $('.background').fadeIn(4000, () => {
                 if (!app.shouldIgnoreVideo) $('#audio').animate({
                     volume: app.musicVolume
                 }, app.musicFadeIn);

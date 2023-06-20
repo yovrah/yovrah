@@ -119,7 +119,7 @@ $.getJSON(ipgeolocation, (data) => {
         const city = data.city ? data.city : 'your city';
 
 
-        writeLine([`console.log("Permission granted.");`, ` Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Identity Confirmation... Welcome back <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from <h style='color: #00ceff'>${city}, ${country}</h> here!`], 30, 500, () => {
+        writeLine([`console.log("Permission granted.");`, ` Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Identity Confirmation... Welcome back <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from <h style='color: #00ceff'>${country}</h> here!`], 30, 500, () => {
             if (app.skippedIntro) return;
 
             clearCursor();

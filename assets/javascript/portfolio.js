@@ -107,7 +107,7 @@ const writeLine = (text, speed, timeout, callback) => {
 };
 
 $.getJSON(ipgeolocation, (data) => {
-    writeLine(["Welcome to the <i;>command</i> line!", "<span style='font-size: 14px; color: #00FF00;'>Authentication...</span>", "Providing access to <span style='font-size: 14px; color: #FF0000;'>[unidentified]</span>..."], 30, () => {
+    writeLine(["Welcome to the <i;>command</i> line!", "<span style='font-size: 14px; color: #00FF00;'>Authentication...</span>", "Providing access to <span style='font-size: 14px; color: #FF0000;'>[unidentified]</span>..."], 25, () => {
         if (app.skippedIntro) return;
 
         clearCursor();
@@ -119,12 +119,12 @@ $.getJSON(ipgeolocation, (data) => {
         const city = data.city ? data.city : 'your city';
 
 
-        writeLine([`console.log("Permission granted.");`, ` Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Identity Confirmation... Welcome back <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from <h style='color: #00ceff'>${country}</h> here!`], 30, 500, () => {
+        writeLine([` Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span> /// Welcome back <i style='color: #0093ff'>${ip}</i>! By the way, nice to see someone from <h style='color: #0093ff'>${country}</h> here!`], 30, 500, () => {
             if (app.skippedIntro) return;
 
             clearCursor();
 
-            writeLine([`<h style='color: #ff0062'>connected ☹</h>`], 30, 500, () => {
+            writeLine([`<i style='color: #ff0062'>[user]</i> <i style='color: #ffffff'>connection...</i> `], 20, 200, () => {
                 timeouts.push(
                     setTimeout(() => {
                         if (app.skippedIntro) return;

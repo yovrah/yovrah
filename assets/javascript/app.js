@@ -8,7 +8,7 @@ class _app {
   backgroundToggler = false;
   shouldIgnoreVideo = false;
   effects = ['fade'];
-  brandDescription = [ 'ай фак ю пушит шит', '<i>psilo</i> - kill again', '+11° Heavy rain shower', ' <a href="https://steamcommunity.com/id/yovrah/"target="_blank"><i class="fab fa-steam"></i><a>ᅠ</a><a href="https://www.instagram.com/yovrah/"target="_blank"><i class="fab fa-instagram"></i></a>ᅠ<b></b><a href="https://open.spotify.com/playlist/2IPxk1wYaHBHNXVlp8Rzkp?si=fc1be45345c84e12" target="_blank"><i class="fab fa-spotify"></i></a>ᅠ<a href="https://t.me/im2sexy" target="_blank"><i class="fab fa-telegram"></i></a></a> ', ];
+  brandDescription = [ 'ай фак ю пушит шит', '<i>psilo</i> - kill again', '+11° Heavy rain shower', ' <a href="https://steamcommunity.com/id/yovrah/"target="_blank"><i class="fab fa-steam"></i><a>ᅠ</a><a href="https://www.instagram.com/gayfurrynigga?igsh=OWp1bHh0YzQwZjlq"target="_blank"><i class="fab fa-instagram"></i></a>ᅠ<b></b><a href="https://open.spotify.com/playlist/2IPxk1wYaHBHNXVlp8Rzkp?si=fc1be45345c84e12" target="_blank"><i class="fab fa-spotify"></i></a>ᅠ<a href="https://t.me/im2sexy" target="_blank"><i class="fab fa-telegram"></i></a></a> ', ];
   titleChanger = (text, delay) => {
     if (!text) return;
 

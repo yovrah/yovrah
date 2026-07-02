@@ -5,7 +5,8 @@
 `[status] online // building things that probably don't need a background video`
 
 [![Website](https://img.shields.io/badge/site-yovrah.github.io-63ff8a?style=for-the-badge&logo=googlechrome&logoColor=black)](https://yovrah.github.io)
-[![Telegram](https://img.shields.io/badge/telegram-@im2sexy-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/im2sexy)
+[![Telegram](https://img.shields.io/badge/telegram-@yovrah-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/yovrah)
+[![Instagram](https://img.shields.io/badge/instagram-@yovrah-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/yovrah/)
 [![Steam](https://img.shields.io/badge/steam-profile-171a21?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/id/yovrah/)
 [![Spotify](https://img.shields.io/badge/spotify-playlist-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/playlist/2IPxk1wYaHBHNXVlp8Rzkp)
 
